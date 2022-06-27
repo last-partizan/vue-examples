@@ -1,4 +1,4 @@
-# Vue 2.7 + Vite
+# Vue 3 + Vite
 
 ```
 pnpm install

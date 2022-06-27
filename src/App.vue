@@ -1,7 +1,7 @@
 <template>
   <div>
-    <img alt="Vue logo" src="@/assets/logo.png" />
-    <h1>Hello Vue 2.7 + Vite</h1>
+    <img alt="Vue logo" src="@assets/logo.png" />
+    <h1>Hello Vue 3 + Vite</h1>
   </div>
 </template>
 
