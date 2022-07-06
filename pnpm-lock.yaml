@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vitejs/plugin-vue2': ^1.1.0
+  '@vue/composition-api': ^1.7.0
   typescript: ^4.7.4
   vite: ^2.9.13
   vue: 2.7.3
   vue-tsc: ^0.38.2
 
 dependencies:
+  '@vue/composition-api': 1.7.0_vue@2.7.3
   typescript: 4.7.4
   vue: 2.7.3
   vue-tsc: 0.38.2_typescript@4.7.4
@@ -120,6 +122,14 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.37
       '@vue/shared': 3.2.37
+    dev: false
+
+  /@vue/composition-api/1.7.0_vue@2.7.3:
+    resolution: {integrity: sha512-hxOgLYR+wjuPX9bkP2pAPlqUs98XxBoa9DSLyp1z6+YR92wC42PZcZKs4d+VRtcv4udOv041Kss+F6ap5nj8YA==}
+    peerDependencies:
+      vue: '>= 2.5 < 2.7'
+    dependencies:
+      vue: 2.7.3
     dev: false
 
   /@vue/reactivity-transform/3.2.37:
