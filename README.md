@@ -1,33 +1,39 @@
 # Vue 2.7 + Vite
 
-## Broken type inference example
+## Broken type augmentation
+
+https://v2.vuejs.org/v2/guide/typescript.html
+
+```ts
+// env.d.ts
+declare module "vue/types/vue" {
+  interface Vue {
+    $t: (s: string) => string
+  }
+}
+```
+
+```ts
+// broken-augment.ts
+import {defineComponent} from "vue";
+
+export default defineComponent({
+  methods: {
+    getTranslatedText() {
+      return this.$t("hello.vue");
+    },
+  },
+});
+```
 
 
 ```
-pnpm install
-```
+> pnpm vue-tsc
+src/broken-augment.ts:6:14 - error TS2571: Object is of type 'unknown'.
 
-```
-pnpm vue-tsc --noEmit
-src/broken-method-type.ts:15:23 - error TS2339: Property 'fetchData' does not
-exist on type 'CreateComponentPublicInstance<{}, unknown, {}, {}, {},
-ComponentOptionsMixin, ComponentOptionsMixin, {}, {}, {}, false,
-OptionTypesType<{}, {}, {}, {}, {}, {}>, ... 5 more ..., {}>'.
-
-15       fetchData: this.fetchData,
-                         ~~~~~~~~~
-
-                         src/broken-method-type.ts:19:10 - error TS2339:
-                         Property 'fetchData' does not exist on type
-                         'CreateComponentPublicInstance<{}, unknown, {}, {}, {},
-                         ComponentOptionsMixin, ComponentOptionsMixin, {}, {},
-                         {}, false, OptionTypesType<{}, {}, {}, {}, {}, {}>, ...
-                         5 more ..., {}>'.
-
-                         19     this.fetchData();
-                                     ~~~~~~~~~
+6       return this.$t("hello.vue");
+               ~~~~~~~
 
 
-                                     Found 2 errors in the same file, starting
-                                     at: src/broken-method-type.ts:15
+Found 1 error in src/broken-augment.ts:6
 ```
