@@ -4,16 +4,16 @@ specifiers:
   '@vitejs/plugin-vue2': ^1.1.0
   typescript: ^4.7.4
   vite: ^2.9.13
-  vue: 2.7.4
+  vue: 2.7.5
   vue-tsc: ^0.38.2
 
 dependencies:
   typescript: 4.7.4
-  vue: 2.7.4
+  vue: 2.7.5
   vue-tsc: 0.38.3_typescript@4.7.4
 
 devDependencies:
-  '@vitejs/plugin-vue2': 1.1.2_vite@2.9.14+vue@2.7.4
+  '@vitejs/plugin-vue2': 1.1.2_vite@2.9.14+vue@2.7.5
   vite: 2.9.14
 
 packages:
@@ -36,7 +36,7 @@ packages:
       '@babel/helper-validator-identifier': 7.18.6
       to-fast-properties: 2.0.0
 
-  /@vitejs/plugin-vue2/1.1.2_vite@2.9.14+vue@2.7.4:
+  /@vitejs/plugin-vue2/1.1.2_vite@2.9.14+vue@2.7.5:
     resolution: {integrity: sha512-y6OEA+2UdJ0xrEQHodq20v9r3SpS62IOHrgN92JPLvVpNkhcissu7yvD5PXMzMESyazj0XNWGsc8UQk8+mVrjQ==}
     engines: {node: '>=14.6.0'}
     peerDependencies:
@@ -44,7 +44,7 @@ packages:
       vue: ^2.7.0-0
     dependencies:
       vite: 2.9.14
-      vue: 2.7.4
+      vue: 2.7.5
     dev: true
 
   /@volar/code-gen/0.38.3:
@@ -93,8 +93,8 @@ packages:
       '@vue/shared': 3.2.37
     dev: false
 
-  /@vue/compiler-sfc/2.7.4:
-    resolution: {integrity: sha512-WCaF33mlKLSvHDKvOD6FzTa5CI2FlMTeJf3MxJsNP0KDgRoI6RdXhHo9dtvCqV4Sywf9Owm17wTLT1Ymu/WsOQ==}
+  /@vue/compiler-sfc/2.7.5:
+    resolution: {integrity: sha512-f2xlkMzBLbTAUy13N4aJBnmb7+86WJqoGqHDibkGHd1/CabpNVvzhpBFlfWJjBrGWIcWywNGgGSuoWzpCUuD4w==}
     dependencies:
       '@babel/parser': 7.18.8
       postcss: 8.4.14
@@ -486,8 +486,8 @@ packages:
       typescript: 4.7.4
     dev: false
 
-  /vue/2.7.4:
-    resolution: {integrity: sha512-8KGyyzFSj/FrKj1y7jyEpv8J4osgZx6Lk1lVzh1aP4BqsXZhATH1r0gdJNz00MMyBhK0/m2cNoPuOZ1NzeiUEw==}
+  /vue/2.7.5:
+    resolution: {integrity: sha512-mUDXXgBIFr9dk0k/3dpB6wtnCxRhe9mbGxWLtha9mTUrEWkdkZW1d58vl98VKWH067NA8f1Wj4Qwq7y7DDYfyw==}
     dependencies:
-      '@vue/compiler-sfc': 2.7.4
+      '@vue/compiler-sfc': 2.7.5
       csstype: 3.1.0
