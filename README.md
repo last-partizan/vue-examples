@@ -1,6 +1,6 @@
 # Vue 2.7 + Vite
 
-## Broken type inference example
+## Incompatible type for vue-router
 
 
 ```
@@ -8,26 +8,14 @@ pnpm install
 ```
 
 ```
-pnpm vue-tsc --noEmit
-src/broken-method-type.ts:15:23 - error TS2339: Property 'fetchData' does not
-exist on type 'CreateComponentPublicInstance<{}, unknown, {}, {}, {},
-ComponentOptionsMixin, ComponentOptionsMixin, {}, {}, {}, false,
-OptionTypesType<{}, {}, {}, {}, {}, {}>, ... 5 more ..., {}>'.
+pnpm vue-tsc
 
-15       fetchData: this.fetchData,
-                         ~~~~~~~~~
+src/routes.ts:9:5 - error TS2322: Type 'DefineComponent<{}, unknown, Data, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, Readonly<ExtractPropTypes<{}>>, {}>' is not assignable to type 'Component | undefined'.
+  Type 'ComponentPublicInstanceConstructor<Vue3Instance<Data, Readonly<ExtractPropTypes<{}>>, Readonly<ExtractPropTypes<{}>>, {}, {}, true, ComponentOptionsBase<any, any, ... 7 more ..., any>> & ... 5 more ... & Readonly<...>, ... 4 more ..., MethodOptions> & ComponentOptionsBase<...> & { ...; }' is missing the following properties from type 'VueConstructor<Vue<Record<string, any>, Record<string, any>, never, never, never, never, (event: string, ...args: any[]) => Vue<Record<string, any>, Record<string, any>, ... 4 more ..., ...>>>': extend, nextTick, set, delete, and 10 more.
 
-                         src/broken-method-type.ts:19:10 - error TS2339:
-                         Property 'fetchData' does not exist on type
-                         'CreateComponentPublicInstance<{}, unknown, {}, {}, {},
-                         ComponentOptionsMixin, ComponentOptionsMixin, {}, {},
-                         {}, false, OptionTypesType<{}, {}, {}, {}, {}, {}>, ...
-                         5 more ..., {}>'.
-
-                         19     this.fetchData();
-                                     ~~~~~~~~~
+9     component: App,
+      ~~~~~~~~~
 
 
-                                     Found 2 errors in the same file, starting
-                                     at: src/broken-method-type.ts:15
+Found 1 error in src/routes.ts:9
 ```

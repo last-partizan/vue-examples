@@ -5,11 +5,13 @@ specifiers:
   typescript: ^4.7.4
   vite: ^2.9.13
   vue: 2.7.6
+  vue-router: <4
   vue-tsc: ^0.38.5
 
 dependencies:
   typescript: 4.7.4
   vue: 2.7.6
+  vue-router: 3.5.4
   vue-tsc: 0.38.5_typescript@4.7.4
 
 devDependencies:
@@ -417,8 +419,8 @@ packages:
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
-  /rollup/2.76.0:
-    resolution: {integrity: sha512-9jwRIEY1jOzKLj3nsY/yot41r19ITdQrhs+q3ggNWhr9TQgduHqANvPpS32RNpzGklJu3G1AJfvlZLi/6wFgWA==}
+  /rollup/2.77.0:
+    resolution: {integrity: sha512-vL8xjY4yOQEw79DvyXLijhnhh+R/O9zpF/LEgkCebZFtb6ELeN9H3/2T0r8+mp+fFTBHZ5qGpOpW2ela2zRt3g==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -471,10 +473,14 @@ packages:
       esbuild: 0.14.48
       postcss: 8.4.14
       resolve: 1.22.1
-      rollup: 2.76.0
+      rollup: 2.77.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /vue-router/3.5.4:
+    resolution: {integrity: sha512-x+/DLAJZv2mcQ7glH2oV9ze8uPwcI+H+GgTgTmb5I55bCgY3+vXWIsqbYUzbBSZnwFHEJku4eoaH/x98veyymQ==}
+    dev: false
 
   /vue-tsc/0.38.5_typescript@4.7.4:
     resolution: {integrity: sha512-AFlqvwpENOTTJxS1Gl1uG0ZVsvtGCbgv9d0i4fXk5Pnao/ETVwWewPEsj+4cPlwa5htO9WhK6qfWwoqcCqg0yQ==}
