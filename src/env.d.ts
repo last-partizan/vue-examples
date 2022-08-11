@@ -12,3 +12,5 @@ declare module "vue/types/vue" {
     $t: (s: string) => string
   }
 }
+
+export {}
