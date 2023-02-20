@@ -15,7 +15,22 @@
     "noEmit": true
   },
   "vueCompilerOptions": {
-    "target": 2.7
+    "target": 2.7,
+    "experimentalModelPropName": {
+      "": {
+        "input": { "type": "radio" },
+        "custom-radio": true
+      },
+      "checked": {
+        "input": { "type": "checkbox" },
+        "custom-checkbox": true
+      },
+      "value": {
+        "input": true,
+        "textarea": true,
+        "select": true
+      }
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
