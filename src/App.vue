@@ -7,7 +7,7 @@
     <input v-model="checkboxState" type="checkbox" value="on" >
 
     <!-- error TS1117: An object literal cannot have multiple properties with the same name. -->
-    <CustomCheckbox
+    <BFormCheckbox
       v-model="checkboxState"
       value="on"
     />
@@ -15,17 +15,7 @@
 </template>
 <script setup lang="ts">
 import { defineComponent, ref } from "vue";
-
-const CustomCheckbox = defineComponent({
-  model: {
-    prop: "checked",
-    event: "change",
-  },
-  props: {
-    value: String,
-    checked: Boolean,
-  },
-})
+import { BFormCheckbox } from "bootstrap-vue"
 
 const checkboxState = ref(false)
 </script>

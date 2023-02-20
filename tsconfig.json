@@ -19,11 +19,11 @@
     "experimentalModelPropName": {
       "": {
         "input": { "type": "radio" },
-        "custom-radio": true
+        "b-form-radio": true
       },
       "checked": {
         "input": { "type": "checkbox" },
-        "custom-checkbox": true
+        "b-form-checkbox": true
       },
       "value": {
         "input": true,
