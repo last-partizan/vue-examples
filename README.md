@@ -1,6 +1,10 @@
 # Vue 2.7 + Vite
 
-## Broken type inference example
+## Broken custom checkbox value
+
+Refs:
+
+- https://v3-migration.vuejs.org/breaking-changes/v-model.html
 
 
 ```
@@ -8,18 +12,13 @@ pnpm install
 ```
 
 ```
-pnpm vue-tsc --noEmit
+pnpm vue-tsc
 
-src/broken-method-type.ts:15:23 - error TS2339: Property 'fetchData' does not exist on type 'CreateComponentPublicInstance<{}, unknown, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, {}, {}, false, OptionTypesType<{}, {}, {}, {}, {}, {}>, ... 5 more ..., {}>'.
+src/App.vue:12:7 - error TS1117: An object literal cannot have multiple properties with the same name.
 
-15       fetchData: this.fetchData,
-                         ~~~~~~~~~
-
-src/broken-method-type.ts:19:10 - error TS2339: Property 'fetchData' does not exist on type 'CreateComponentPublicInstance<{}, unknown, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, {}, {}, false, OptionTypesType<{}, {}, {}, {}, {}, {}>, ... 5 more ..., {}>'.
-
-19     this.fetchData();
-            ~~~~~~~~~
+12       value="on"
+         ~~~~~
 
 
-Found 2 errors in the same file, starting at: src/broken-method-type.ts:15
+Found 1 error in src/App.vue:12
 ```
