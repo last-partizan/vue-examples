@@ -23,9 +23,13 @@
       },
       "checked": {
         "input": { "type": "checkbox" },
-        "b-form-checkbox": true
+        "b-form-radio": true,
+        "b-form-checkbox": true,
+        "BFormCheckbox": true
       },
       "value": {
+        "b-form-radio": true,
+        "b-form-checkbox": true,
         "input": true,
         "textarea": true,
         "select": true

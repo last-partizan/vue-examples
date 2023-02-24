@@ -7,14 +7,11 @@
     <input v-model="checkboxState" type="checkbox" value="on" >
 
     <!-- error TS1117: An object literal cannot have multiple properties with the same name. -->
-    <BFormCheckbox
-      v-model="checkboxState"
-      value="on"
-    />
+    <b-form-checkbox v-model="checkboxState" value="on" />
   </div>
 </template>
 <script setup lang="ts">
-import { defineComponent, ref } from "vue";
+import { ref } from "vue";
 import { BFormCheckbox } from "bootstrap-vue"
 
 const checkboxState = ref(false)
